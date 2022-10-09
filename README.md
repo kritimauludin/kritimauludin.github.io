@@ -6,7 +6,7 @@
 
 ## Project setup and Installation
 ```
-1. Last Save this folder in your desired PHP directory.
+1. Save this folder in your desired directory.
 2. Double click on index.html file
 3. Click icon (?) in homepage for next instruction
 
