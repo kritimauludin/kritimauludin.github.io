@@ -56,9 +56,39 @@ $(document).ready(function() {
 		}
 	});
 
-	//swiper for thank to company
-
+	
 });
+	//trigger scroll up and down for mobile
+	var counter = 0;
+	var descCount = 0;
+	function scrollMenu(e){
+		if(e == "mousedown") {
+			counter += 45;
+			descCount += 1;
+			$('.side-about-box').css({"transform": "rotate("+ counter +"deg)"});
+			$(".descBox").removeClass('active');
+			if(descCount > 7){descCount = 0}
+				$(".descBox").eq(descCount).addClass('active');
+		}else if (e == "mouseup"){
+			counter -= 45;
+			descCount -= 1;
+			$('.side-about-box').css({"transform": "rotate("+ counter +"deg)"});
+			$(".descBox").removeClass('active');
+			if(descCount < -7){descCount = 0}
+				$(".descBox").eq(descCount).addClass('active');
+		}
+	}
+
+	var count = 0;
+	function scrollPorto(e){
+		if(e == "mousedown") {
+			count -= 10;
+			$('#GalleryCenter').css({"transform": "translate(-50%, -50%) perspective(1000px) rotateY("+count+"deg)"});
+		}else if (e == "mouseup"){
+			count += 10;
+			$('#GalleryCenter').css({"transform": "translate(-50%, -50%) perspective(1000px) rotateY("+count+"deg)"});
+		}
+	}
 
 	//kontrol modal
 	function showModal(id){
@@ -67,6 +97,7 @@ $(document).ready(function() {
 		
 	}
 
+	// kontrol close modal
 	function closeBtn(id){
 		const modalContent = document.querySelector('#modal'+id);
 		modalContent.classList.remove('active');

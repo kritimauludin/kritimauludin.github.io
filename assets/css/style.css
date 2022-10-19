@@ -41,8 +41,6 @@ img {
 }
 .button-container {
   position: relative;
-  right: -90%;
-  bottom: -30%;
 }
 .button {
   margin: 10px;
@@ -51,7 +49,13 @@ img {
   border-radius: 36px;
   font-size: 20px;
   text-decoration: none;
+}
+.backInRight{
   animation: backInRight;
+  animation-duration: 7s;
+}
+.heartBeat{
+  animation: heartBeat;
   animation-duration: 7s;
 }
 .button:hover {
@@ -72,6 +76,10 @@ img {
 }
 .hide {
   visibility: hidden;
+}
+
+.button-group {
+  display: flex;
 }
 
 
@@ -186,8 +194,16 @@ span{
   #hero {
     padding-left: 160px;
   }
+  .trigger-wheel-mobile{
+    visibility: hidden;
+  }
 }
 
+@media (min-width: 320px) and (max-width: 961px){
+  .trigger-wheel-mobile{
+    visibility: visible;
+  }
+}
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
@@ -199,7 +215,7 @@ span{
 }
 
 /*--------------------------------------------------------------
-# side wheele area
+# side wheel area
 --------------------------------------------------------------*/
 .side-about-box {
   position: relative;
@@ -431,8 +447,6 @@ span{
 .gallery-wrap {
   width: 100%;
   height: 100vh;
-  /* position: relative; */
-  background: #e2e8e9;
 }
 .gallery-center {
   position: absolute;
@@ -558,4 +572,18 @@ details[open] .control-icon-close {
 
 details[open] .control-icon-expand {
   display: none;
+}
+
+/*--------------------------------------------------------------
+# Skill Icon
+--------------------------------------------------------------*/
+.skill-icon {
+  padding: 20px;
+}
+
+.skill-icon img {  
+  max-width: 90px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
 }

@@ -35,8 +35,8 @@
          <a href="#" class="descBox" onclick="showModal(2)">
             <figure style="background-image: url(assets/img/about/about-2.jpg);"></figure>
             <div class="description">
-               <h3>Basic Skill Programming</h3>
-               <p>Skill pemograman saya didapat ketika bersekolah diSMK INFOKOM, saat itu bahasa
+               <h3>Skill Programming</h3>
+               <p>Skill set yang saya tekuni adalah web developer spesifik ke arah Backend, Untuk bahasa pemograman
                   yang pertama dipelajari Bahasa Pascal.
                </p>
                <br>
@@ -112,13 +112,18 @@
             </div>
          </div>
       </div> 
+
+      <div class="trigger-wheel-mobile button-container" style="right: -75%;"> 
+         <a href="#" class='button bg-blue center heartBeat' o heartBeatnclick="scrollMenu('mouseup')"><i class="bx bxs-up-arrow-circle"></i></a>
+         <a href="#" class='button bg-blue center heartBeat' onclick="scrollMenu('mousedown')"><i class="bx bxs-down-arrow-circle"></i></a>    
+      </div>
       
       <!-- side button -->
-      <div class="button-container">
-         <a href="#" class='button bg-blue center' onclick="showModal(98)"><i class="bx bxs-help-circle"></i></a>
-         
-         <a href="#" class='button bg-blue center' onclick="showModal(99)"><i class="bx bxl-product-hunt"></i></a>
-         <a href="#" class='button bg-blue center' onclick="showModal(100)"><i class="bx bxs-landmark"></i></a>
+      <div class="button-container" style="right: -85%; bottom: -30%;">
+         <a href="#" class='button bg-blue center backInRight' onclick="showModal(98)"><i class="bx bxs-help-circle"></i></a>     
+         <a href="#" class='button bg-blue center backInRight' onclick="showModal(99)"><i class="bx bxl-product-hunt"></i></a>
+         <a href="#" class='button bg-blue center backInRight' onclick="showModal(100)"><i class="bx bxs-landmark"></i></a>
+         <a href="https://api.whatsapp.com/send?phone=6283811641671&text=Halo%20Kriti,%20Saya%20mau%20bekerja%20sama%20denganmu.%20Apakah%20bisa%20di%20bantu?" target="_blank" class='button bg-blue center backInRight'><i class="bx bxl-whatsapp"></i></a>
       </div>
    </section>
 
@@ -181,7 +186,11 @@
       <div class="modal" id="modal99" style="overflow: hidden !important;">
          <div class="modal__wrapper">
             <div class="modal-item" style="background-color: rgba(0, 0, 0, 0);">
-               <button class="btn btn-close" onclick="closeBtn(99)" style="background-color: #fff; border-radius: 100%;">&#x2716;</button>
+               <div class="button-group">
+                  <a href="#" class='trigger-wheel-mobile button bg-blue center heartBeat' onclick="scrollPorto('mouseup')"><i class="bx bxs-left-arrow-circle"></i></a>
+                  <a class="btn btn-close" onclick="closeBtn(99)" style="background-color: #fff; border-radius: 100%;">&#x2716;</a>
+                  <a href="#" class='trigger-wheel-mobile button bg-blue center heartBeat' onclick="scrollPorto('mousedown')"><i class="bx bxs-right-arrow-circle"></i></a>    
+               </div>
                <div class="modal-item__info">
                   <div class="gallery-wrap">
                      <div class="gallery-center" id="GalleryCenter">
@@ -289,6 +298,7 @@
       </div>
    </section>    
 
+   <!-- modal Perkenalan -->
    <div class="modal" id="modal1">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -307,6 +317,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal skill Programming -->
    <div class="modal" id="modal2">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -315,19 +327,47 @@
                  <figure>
                      <img src="assets/img/about/about-2.jpg" alt="image">
                  </figure>
-                  <h1>Basic Skill Programming</h1>
-                  <p>
-                     Sedikit mundur ke 5 tahun lalu saya tidak pernah berpikir untuk melanjutkan pedidikan saya sampai kuliah oleh karena itu saya memilih untuk masuk SMK INFOKOM Bogor.
-                  </p><p>
-                     Tepat pada kelas 10 atau kelas 1 SMK, tahun itu merupakan pertama kali saya mulai mempelejari bahasa pemograman yaitu pascal. Pada saat itu saya sungguh kesulitan untuk mengikuti pelajaran dan merasa mulai kehilangan tujuan karena memilih jurusan yang salah.
-                  </p>
-                  <p>
-                     Setelah masuk kekelas 11 saya mulai bisa mengikuti pelajaran pemograman terlebih karena proses PKL yang memaksa saya untuk berkembang lebih pesat secara mandiri.
-                  </p>
+                  <h1>Skill Programming</h1>
+                  <details open style="width: 100% !important;">
+                     <summary>
+                      <b>Advance</b>
+                     </summary>
+                     <div class="skill-icon">
+                        <img src="assets/img/icon/php.png" alt="php">
+                        <img src="assets/img/icon/html.png" alt="html">
+                        <img src="assets/img/icon/js.png" alt="js">
+                        <img src="assets/img/icon/css.png" alt="css">
+                     </div>
+                  </details>
+                  <details open style="width: 100% !important;">
+                     <summary>
+                      <b>Intermediate</b>
+                     </summary>
+                     <div class="skill-icon">
+                        <img src="assets/img/icon/laravel.png" alt="laravel.png">
+                        <img src="assets/img/icon/codeigniter.png" alt="codeigniter.png">
+                        <img src="assets/img/icon/MySQL.png" alt="js">
+                        <img src="assets/img/icon/git.png" alt="git.png">
+                        <img src="assets/img/icon/github.png" alt="github.png">
+                        <img src="assets/img/icon/composer.png" alt="composer.png">
+                     </div>
+                  </details>
+                  <details open style="width: 100% !important;">
+                     <summary>
+                      <b>Basic</b>
+                     </summary>
+                     <div class="skill-icon">
+                        <img src="assets/img/icon/firebase.png" alt="firebase.png">
+                        <img src="assets/img/icon/go.png" alt="go.png">
+                        <img src="assets/img/icon/nodejs.png" alt="nodejs.png">
+                     </div>
+                  </details>
             </div>
          </div>
       </div>
    </div>
+
+   <!-- modal Penghargaan -->
    <div class="modal" id="modal3">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -356,6 +396,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal sertifikasi -->
    <div class="modal" id="modal4">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -371,6 +413,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal Riwayat Pendidikan -->
    <div class="modal" id="modal5">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -410,6 +454,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal pengalaman profesional -->
    <div class="modal" id="modal6">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -482,6 +528,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal kegiatan Lain -->
    <div class="modal" id="modal7">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -497,6 +545,8 @@
          </div>
       </div>
    </div>
+
+   <!-- modal closing -->
    <div class="modal" id="modal8">
       <div class="modal__wrapper">
          <div class="modal-item">
@@ -523,5 +573,6 @@
          </div>
       </div>
    </div>
+
    </body>
 </html>
