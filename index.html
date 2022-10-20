@@ -123,7 +123,8 @@
          <a href="#" class='button bg-blue center backInRight' onclick="showModal(98)"><i class="bx bxs-help-circle"></i></a>     
          <a href="#" class='button bg-blue center backInRight' onclick="showModal(99)"><i class="bx bxl-product-hunt"></i></a>
          <a href="#" class='button bg-blue center backInRight' onclick="showModal(100)"><i class="bx bxs-landmark"></i></a>
-         <a href="https://api.whatsapp.com/send?phone=6283811641671&text=Halo%20Kriti,%20Saya%20mau%20bekerja%20sama%20denganmu.%20Apakah%20bisa%20di%20bantu?" target="_blank" class='button bg-blue center backInRight'><i class="bx bxl-whatsapp"></i></a>
+         <a href="#" class='button bg-blue center backInRight' onclick="showModal(101)"><i class="bx bxs-contact"></i></a>
+         
       </div>
    </section>
 
@@ -292,6 +293,30 @@
                      <a href="https://www.github.com/kritimauludin" target="_blank" class="button bg-blue"><i class="bx bxl-github"></i></a>
                      <a href="assets/cv/cv-kriti-mauludin.pdf" class="download-cv button bg-blue" download=""><i class='bx bxs-file-pdf ' ></i></a>
                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>    
+
+   <!-- contact to me area  -->
+   <section id="contact">
+      <div class="modal" id="modal101" style="overflow: hidden !important;">
+         <div class="modal__wrapper">
+            <div class="modal-item">
+               <button class="btn btn-close" onclick="closeBtn(101)">&#x2716;</button>
+               <div class="modal-item__info">
+                  <h1 class="center">Hubungi dan Sapa Saya melalui Email atau WhatsApp </h1>
+                  <form action="#" method="post" role="form">
+                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                     <textarea class="form-control" id="message" rows="5" placeholder="Message" required onkeyup="changeUrlWa()"></textarea>
+                     <div class="social-links">
+                        <a href="#" class='button bg-blue center'><i class="bx bxs-envelope"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=6283811641671&text=Halo%20Kriti,%20Saya%20mau%20bekerja%20sama%20denganmu.%20Apakah%20bisa%20di%20bantu?" target="_blank" id="link-to-wa" class='button bg-blue center'><i class="bx bxl-whatsapp"></i></a>
+                     </div>
+                   </form>
                </div>
             </div>
          </div>

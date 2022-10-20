@@ -58,6 +58,12 @@ $(document).ready(function() {
 
 	
 });
+
+	function changeUrlWa(){
+		var nameContact = document.getElementById('name').value;
+		var messageContact = document.getElementById('message').value;
+		document.getElementById('link-to-wa').href = "https://api.whatsapp.com/send?phone=6283811641671&text=Halo nama saya "+nameContact+", "+messageContact;
+	}
 	//trigger scroll up and down for mobile
 	var counter = 0;
 	var descCount = 0;
