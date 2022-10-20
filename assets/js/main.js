@@ -24,8 +24,8 @@ $(document).ready(function() {
 	//untuk side box di header
 	var counter = 0;
 	var descCount = 0
-	var hero = document.querySelector('#hero');
-	hero.addEventListener('wheel', function(event) {
+	var headBackground = document.querySelector('#head-background');
+	headBackground.addEventListener('wheel', function(event) {
 		if(event.deltaY < 0){
 			counter += 45;
 			descCount += 1;
