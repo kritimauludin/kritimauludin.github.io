@@ -1,4 +1,4 @@
-# Portfolio for IBN Competition
+# Web Portfolio 
 
 - This code was written by	        : Kriti Mauludin
 - Find my portfolio on      	      : https://kritimauludin.github.io
